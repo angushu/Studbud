@@ -21,5 +21,10 @@
   "homepage": "https://github.com/angushu/Studbud#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "sass": "^1.51.0"
   }
 }
