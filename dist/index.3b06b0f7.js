@@ -527,8 +527,9 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"2OD7o":[function(require,module,exports) {
 var _tasklist = require("./components/tasklist");
+var _navigation = require("./components/navigation");
 
-},{"./components/tasklist":"5i9SJ"}],"5i9SJ":[function(require,module,exports) {
+},{"./components/tasklist":"5i9SJ","./components/navigation":"jFVbj"}],"5i9SJ":[function(require,module,exports) {
 // constant variables for getting elements from HTML
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button");
@@ -609,6 +610,8 @@ function updateEmpty() {
     if (taskListArray.length > 0) document.getElementById('emptyList').style.display = "none";
     else document.getElementById('emptyList').style.display = "block";
 }
+
+},{}],"jFVbj":[function(require,module,exports) {
 
 },{}]},["2xDT7","2OD7o"], "2OD7o", "parcelRequire60da")
 

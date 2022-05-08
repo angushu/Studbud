@@ -1,3 +1,11 @@
-body{
-    background-color: green;
+.app-container {
+    background-color: rgb(255, 200, 200);
+    padding-left: 120px;
+}
+
+.page-container {
+    margin: 4em;
+    &#home {
+        text-align: center;
+    }
 }
