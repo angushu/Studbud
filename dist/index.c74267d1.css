@@ -1,5 +1,26 @@
 body {
-  background-color: #ff0;
+  background-color: green;
+}
+
+#task-grid {
+  grid-template: "taskform tasklist" 1fr
+  / 1fr 1fr;
+  display: grid;
+}
+
+#taskform {
+  max-width: 300px;
+  grid-area: taskform;
+  margin: 0 auto;
+}
+
+#taskform label {
+  width: 100%;
+  display: block;
+}
+
+#tasklist {
+  grid-area: tasklist;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */
