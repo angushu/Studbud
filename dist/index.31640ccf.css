@@ -27,12 +27,21 @@ img {
   padding-left: 120px;
 }
 
+.prepare-container {
+  background-color: #00f;
+  padding-left: 120px;
+}
+
 .page-container {
   margin: 4em;
 }
 
 .page-container#home {
   text-align: center;
+}
+
+#page-1 {
+  background-color: orange;
 }
 
 nav {
@@ -81,6 +90,15 @@ nav.vertical .nav-links .nav-item a {
   display: block;
 }
 
+.prepare-container {
+  background-color: #00f;
+  padding-left: 120px;
+}
+
+#page-1 {
+  background-color: orange;
+}
+
 #task-grid {
   grid-template: "taskform tasklist" 1fr
   / 1fr 1fr;
@@ -100,6 +118,72 @@ nav.vertical .nav-links .nav-item a {
 
 #tasklist {
   grid-area: tasklist;
+}
+
+:root {
+  --primary: crimson;
+  --dark: grey;
+  --darker: black;
+  --light: white;
+}
+
+.practice-container {
+  background-color: var(--dark);
+  color: var(--light);
+  padding-left: 120px;
+}
+
+#page-2 {
+  background-color: green;
+}
+
+.watch {
+  text-align: center;
+  background-color: var(--darker);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  margin: 4em auto;
+  padding: 1rem 2rem;
+}
+
+.watch .time {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.watch .controls {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.watch .controls button {
+  appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: var(--light);
+  background: none;
+  background-color: var(--primary);
+  color: var(--light);
+  background: none;
+  background-color: var(--primary);
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  margin: 0 .5rem;
+  padding: .5px 1rem;
+  font-size: 1.5rem;
+  transition: all .4s;
+}
+
+.watch .controls button:hover {
+  opacity: .7;
+}
+
+.watch .controls button:active {
+  background-color: var(--darker);
 }
 
 /*# sourceMappingURL=index.31640ccf.css.map */

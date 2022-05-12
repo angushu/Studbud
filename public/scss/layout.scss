@@ -3,9 +3,19 @@
     padding-left: 120px;
 }
 
+.prepare-container {
+    background-color: blue;
+    padding-left: 120px;
+}
+
+
 .page-container {
     margin: 4em;
     &#home {
         text-align: center;
     }
+}
+
+#page-1 {
+    background-color: orange;
 }
