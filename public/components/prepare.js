@@ -39,10 +39,19 @@ function addTask(taskDescription,dueDate,estimatedTime,priorityRating,completion
     completionStatus
   };
   taskListArray.push(task);
-  console.log(taskListArray)
+  console.log(taskListArray);
+  console.log("pixxa");
   renderTask(task);
 
+    // create a variable for key
+    var key = task.id.toString();
+    console.log(key);
+  // creating a value
+    localStorage.setItem(key,JSON.stringify(task));
+
 }
+
+// addiung a task to local storage
 
 
 // create a function to make the list appear
