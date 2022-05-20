@@ -6,6 +6,7 @@ var dateDateInput = document.getElementById("dueDateInput");
 var completionTimeInput = document.getElementById("completionTimeInput");
 var estimatedTimeInput = document.getElementById("estimatedTimeInput");
 var priorityInput = document.getElementById("priorityInput")
+var quad_1 = document.getElementById("quad-1");
 
 var tasklist = document.getElementById("tasklist");
 
@@ -65,13 +66,27 @@ function renderTask(task){
   item.setAttribute("data-id",task.id);
   item.innerHTML = 
     "<p>" + task.taskDescription + "</p>" +
-    "<p>" + task.dueDate + "</p>"; +
-    "<p>" + task.dueDate + "</p>"; +
-    "<p>" + task.dueDate + "</p>"; +
-    "<p>" + task.dueDate + "</p>"; +
-    "<p>" + task.dueDate + "</p>"; +
-    "<p>" + task.dueDate + "</p>"; +
-  tasklist.appendChild(item);
+    "<p>" + task.dueDate + "</p>" +
+    "<p>" + task.dateCreated + "</p>" +
+    "<p>" + task.estimatedTime + "</p>" +
+    "<p>" + task.completionTime + "</p>" +
+    "<p>" + task.priorityRating + "</p>" +
+    "<p>" + task.completionStatus + "</p>"; 
+
+    // switch cases based on....
+    switch (item.priorityRating) {
+      case "Low":
+        quad_1.appendChild(item);
+        
+        break;
+      case "Low":
+        quad_1.appendChild(item);
+        
+        break;
+      
+  
+    }
+  quad_1.appendChild(item);
   // Extra Task DOM elements
   let delButton = document.createElement("button");
   let delButtonText = document.createTextNode("Delete Task")
