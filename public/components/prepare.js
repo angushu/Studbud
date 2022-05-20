@@ -6,6 +6,8 @@ var dateDateInput = document.getElementById("dueDateInput");
 var completionTimeInput = document.getElementById("completionTimeInput");
 var estimatedTimeInput = document.getElementById("estimatedTimeInput");
 var priorityInput = document.getElementById("priorityInput");
+
+// variables for the coveyquadrant
 var quad_1 = document.getElementById("quad-1");
 var quad_2 = document.getElementById("quad-2");
 var quad_3 = document.getElementById("quad-3");
@@ -64,36 +66,34 @@ function addTask(
 // create a function to make the list appear
 
 function renderTask(task) {
-  updateEmpty();
-
   // create the HTML elements
-  let item = document.createElement("li");
+  let item = document.createElement("div");
   item.setAttribute("data-id", task.id);
   item.innerHTML =
     "<p>" +
     task.taskDescription +
     "</p>" +
-    "<p>" +
-    task.dueDate +
-    "</p>" +
-    "<p>" +
-    task.dateCreated +
-    "</p>" +
-    "<p>" +
-    task.estimatedTime +
-    "</p>" +
-    "<p>" +
-    task.completionTime +
-    "</p>" +
-    "<p>" +
-    task.priorityRating +
-    "</p>" +
-    "<p>" +
-    task.completionStatus +
-    "</p>";
+    "<p>" ;
+    // task.dueDate +
+    // "</p>" +
+    // "<p>" +
+    // task.dateCreated +
+    // "</p>" +
+    // "<p>" +
+    // task.estimatedTime +
+    // "</p>" +
+    // "<p>" +
+    // task.completionTime +
+    // "</p>" +
+    // "<p>" +
+    // task.priorityRating +
+    // "</p>" +
+    // "<p>" +
+    // task.completionStatus +
+    // "</p>";
 
   // switch cases based on....
-console.log (task.priorityRating);
+  console.log(task.priorityRating);
 
   switch (task.priorityRating) {
     case "Low":
@@ -110,11 +110,24 @@ console.log (task.priorityRating);
 
       break;
   }
+
+  // Viewing a Task
+
+
   // Extra Task DOM elements
   let delButton = document.createElement("button");
   let delButtonText = document.createTextNode("Delete Task");
   delButton.appendChild(delButtonText);
   item.appendChild(delButton);
+
+
+  // Viewing a Task
+  let viewButton = document.createElement("button");
+  let viewButtonText = document.createTextNode("View Task");
+  viewButton.appendChild(viewButtonText);
+  item.appendChild(viewButton);
+
+
 
   // Event Listeners for DOM elements
   delButton.addEventListener("click", function (event) {

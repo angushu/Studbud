@@ -1,54 +1,53 @@
 .prepare-container {
-    background-color: blue;
-    padding-left: 120px;
+  background-color: blue;
+  padding-left: 120px;
 }
 
 #page-1 {
-    background-color: orange;
+  background-color: orange;
 }
 
 #task-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "taskform tasklist";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "taskform tasklist";
 }
 
 #taskform {
-    grid-area: taskform;
-    max-width: 300px;
-    margin: 0 auto;
-    label {
-        display: block;
-        width: 100%;
-    }
+  grid-area: taskform;
+  max-width: 300px;
+  margin: 0 auto;
+  label {
+    display: block;
+    width: 100%;
+  }
 }
 
 #tasklist {
-    grid-area: tasklist;
+  grid-area: tasklist;
 }
 
 #covey-quadrant {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-    .quadrant{
-        min-width: 10em;
-        min-height: 10em;
-        border-radius: 2fr;
+  .quadrant {
+    min-width: 10em;
+    min-height: 10em;
+    border-radius: 2fr;
+  }
 
-    }
-
-    #quad-1 {
-        background-color: cadetblue;
-    }
-    #quad-2 {
-        background-color: chartreuse;
-    }
-    #quad-3 {
-        background-color:deeppink
-    }
-    #quad-4 {
-        background-color:gold;
-    }
+  #quad-1 {
+    background-color: cadetblue;
+  }
+  #quad-2 {
+    background-color: chartreuse;
+  }
+  #quad-3 {
+    background-color: deeppink;
+  }
+  #quad-4 {
+    background-color: gold;
+  }
 }
