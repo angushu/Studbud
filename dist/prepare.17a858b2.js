@@ -535,6 +535,8 @@ var completionTimeInput = document.getElementById("completionTimeInput");
 var estimatedTimeInput = document.getElementById("estimatedTimeInput");
 var priorityInput = document.getElementById("priorityInput");
 var quad_1 = document.getElementById("quad-1");
+var quad_2 = document.getElementById("quad-2");
+var quad_3 = document.getElementById("quad-3");
 var tasklist = document.getElementById("tasklist");
 // event listener for the button, task that gets created based on the value of the input
 button.addEventListener("click", function(event) {
@@ -579,15 +581,19 @@ function renderTask(task1) {
     item.setAttribute("data-id", task1.id);
     item.innerHTML = "<p>" + task1.taskDescription + "</p>" + "<p>" + task1.dueDate + "</p>" + "<p>" + task1.dateCreated + "</p>" + "<p>" + task1.estimatedTime + "</p>" + "<p>" + task1.completionTime + "</p>" + "<p>" + task1.priorityRating + "</p>" + "<p>" + task1.completionStatus + "</p>";
     // switch cases based on....
-    switch(item.priorityRating){
+    console.log(task1.priorityRating);
+    switch(task1.priorityRating){
         case "Low":
             quad_1.appendChild(item);
+            console.log("Low");
             break;
-        case "Low":
-            quad_1.appendChild(item);
+        case "Medium":
+            quad_2.appendChild(item);
+            break;
+        case "High":
+            quad_3.appendChild(item);
             break;
     }
-    quad_1.appendChild(item);
     // Extra Task DOM elements
     let delButton = document.createElement("button");
     let delButtonText = document.createTextNode("Delete Task");
@@ -615,8 +621,8 @@ function removeItemFromArray(arr, index) {
     return arr;
 }
 function updateEmpty() {
-    if (taskListArray.length > 0) document.getElementById('emptyList').style.display = "none";
-    else document.getElementById('emptyList').style.display = "block";
+    if (taskListArray.length > 0) document.getElementById("emptyList").style.display = "none";
+    else document.getElementById("emptyList").style.display = "block";
 }
 
 },{}]},["6Kdz9","6MCCf"], "6MCCf", "parcelRequire60da")
