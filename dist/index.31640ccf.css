@@ -120,6 +120,32 @@ nav.vertical .nav-links .nav-item a {
   grid-area: tasklist;
 }
 
+#covey-quadrant {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+#covey-quadrant .quadrant {
+  min-width: 10em;
+  min-height: 10em;
+}
+
+#covey-quadrant #quad-1 {
+  background-color: #5f9ea0;
+}
+
+#covey-quadrant #quad-2 {
+  background-color: #7fff00;
+}
+
+#covey-quadrant #quad-3 {
+  background-color: #ff1493;
+}
+
+#covey-quadrant #quad-4 {
+  background-color: gold;
+}
+
 :root {
   --primary: crimson;
   --dark: grey;

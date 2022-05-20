@@ -569,7 +569,8 @@ var output = document.getElementById('value');
 output.innerHTML = slider.value;
 slider.oninput = function() {
     output.innerHTML = this.value;
-};
+} //Pomodoro Timer
+;
 
 },{}]},["fBTxV","hKQ2O"], "hKQ2O", "parcelRequire60da")
 
