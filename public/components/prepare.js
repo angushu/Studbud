@@ -14,6 +14,9 @@ var quad_3 = document.getElementById("quad-3");
 
 var tasklist = document.getElementById("tasklist");
 
+
+var modal_content = document.getElementById("modal-content");
+
 // event listener for the button, task that gets created based on the value of the input
 
 button.addEventListener("click", function (event) {
@@ -124,8 +127,20 @@ function renderTask(task) {
   // Viewing a Task
   let viewButton = document.createElement("button");
   let viewButtonText = document.createTextNode("View Task");
+  viewButton.setAttribute("id","modalBtn");
   viewButton.appendChild(viewButtonText);
   item.appendChild(viewButton);
+
+  let task2;
+  for(i = 0; i<taskListArray.length; i++){
+    if (taskListArray[i].id ==  viewButton.parentNode.getAttribute("data-id")){
+      task2 = taskListArray[i];
+    }
+  }
+
+  createmodal(task2);
+
+
 
 
 
@@ -164,3 +179,47 @@ function updateEmpty() {
     document.getElementById("emptyList").style.display = "block";
   }
 }
+
+
+function createmodal(task){
+
+  // Get the modal
+var modal = document.getElementById("task-modal");
+
+// Get the button that opens the modal
+var modalbtn = document.getElementById("modalBtn");
+
+// When the user clicks on the button, open the modal
+modalbtn.onclick = function() {
+  modal.style.display = "block";
+
+  let item = document.createElement("div");
+  item.setAttribute("data-id", task.id);
+  item.innerHTML =
+
+    "<p>  Task Due: " +
+    task.taskDescription +
+    "</p>" +
+    "<p>" +
+    task.dueDate +
+    "</p>" +
+    "<p>" +
+    task.dateCreated +
+    "</p>" +
+    "<p>" +
+    task.estimatedTime +
+    "</p>" +
+    "<p>" +
+    task.completionTime +
+    "</p>" +
+    "<p>" +
+    task.priorityRating +
+    "</p>" +
+    "<p>" +
+    task.completionStatus +
+    "</p>";
+    modal_content.appendChild(item);
+}
+
+}
+
