@@ -64,7 +64,7 @@ img {
 
 h1 {
   font-family: Abril Fatface, cursive;
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 h2 {
@@ -351,7 +351,6 @@ nav.vertical .nav-links .nav-item a {
 }
 
 .feature-cards {
-  text-align: center;
   background-color: #7fff00;
   flex-direction: row;
   justify-content: space-around;
@@ -382,12 +381,13 @@ nav.vertical .nav-links .nav-item a {
 }
 
 .feature-container {
-  padding: 3em 1em;
+  text-align: center;
+  padding: 2em 1em;
 }
 
 #music-player {
   background-color: maroon;
-  padding: 6em 3em;
+  padding: 6em 5em;
 }
 
 .home-image {
