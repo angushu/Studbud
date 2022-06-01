@@ -23,7 +23,13 @@ img {
 }
 
 .app-container {
-  background-color: #ffc8c8;
+  height: 100%;
+  background-color: #fbfbfb;
+  padding-left: 120px;
+}
+
+.home-container {
+  background-color: orange;
   padding-left: 120px;
 }
 
@@ -42,6 +48,14 @@ img {
 
 #page-1 {
   background-color: orange;
+}
+
+h1 {
+  font-family: Abril Fatface, cursive;
+}
+
+h2 {
+  font-family: Handlee, cursive;
 }
 
 nav {
@@ -88,11 +102,6 @@ nav.vertical .nav-links {
 nav.vertical .nav-links .nav-item a {
   padding: 4em 0;
   display: block;
-}
-
-.prepare-container {
-  background-color: #00f;
-  padding-left: 120px;
 }
 
 #page-1 {
@@ -310,6 +319,18 @@ nav.vertical .nav-links .nav-item a {
   font-size: 1rem;
   position: relative;
   top: 2rem;
+}
+
+#home-content {
+  background-color: orchid;
+}
+
+#main-text {
+  background-color: #00f;
+}
+
+.feature-cards {
+  background-color: #7fff00;
 }
 
 /*# sourceMappingURL=index.31640ccf.css.map */
