@@ -17,7 +17,6 @@ var tasklist = document.getElementById("tasklist");
 
 var modal_content = document.getElementById("modal-content");
 
-// event listener for the button, task that gets created based on the value of the input
 
 button.addEventListener("click", function (event) {
   event.preventDefault();
@@ -26,7 +25,6 @@ button.addEventListener("click", function (event) {
   let completionTime = completionTimeInput.value;
   let estimatedTime = estimatedTimeInput.value;
   let priorityRating = priorityInput.options[priorityInput.selectedIndex].value;
-
   addTask(task, dueDate, estimatedTime, priorityRating, completionTime, false);
 });
 
@@ -113,9 +111,6 @@ function renderTask(task) {
 
       break;
   }
-
-  // Viewing a Task
-
 
   // Extra Task DOM elements
   let delButton = document.createElement("button");
@@ -219,6 +214,11 @@ modalbtn.onclick = function() {
     task.completionStatus +
     "</p>";
     modal_content.appendChild(item);
+    var span = document.getElementById("close");
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
 }

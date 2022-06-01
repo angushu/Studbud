@@ -46,7 +46,7 @@ img {
 
 nav {
   width: 100%;
-  background-color: #123;
+  background-color: #e0f69f;
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -58,7 +58,7 @@ nav .nav-links {
 }
 
 nav .nav-links .nav-item a {
-  color: #fff;
+  color: #40413f;
   padding: 1em 2em;
   text-decoration: none;
   display: inline-block;
@@ -169,6 +169,19 @@ nav.vertical .nav-links .nav-item a {
   border: 1px solid #888;
   margin: 15% auto;
   padding: 20px;
+}
+
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover, #close:focus {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 :root {

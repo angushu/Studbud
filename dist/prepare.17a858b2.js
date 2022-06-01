@@ -540,7 +540,6 @@ var quad_2 = document.getElementById("quad-2");
 var quad_3 = document.getElementById("quad-3");
 var tasklist = document.getElementById("tasklist");
 var modal_content = document.getElementById("modal-content");
-// event listener for the button, task that gets created based on the value of the input
 button.addEventListener("click", function(event) {
     event.preventDefault();
     let task = taskInput.value;
@@ -612,7 +611,6 @@ function renderTask(task1) {
             quad_3.appendChild(item);
             break;
     }
-    // Viewing a Task
     // Extra Task DOM elements
     let delButton = document.createElement("button");
     let delButtonText = document.createTextNode("Delete Task");
@@ -664,6 +662,11 @@ function createmodal(task) {
         item.setAttribute("data-id", task.id);
         item.innerHTML = "<p>  Task Due: " + task.taskDescription + "</p>" + "<p>" + task.dueDate + "</p>" + "<p>" + task.dateCreated + "</p>" + "<p>" + task.estimatedTime + "</p>" + "<p>" + task.completionTime + "</p>" + "<p>" + task.priorityRating + "</p>" + "<p>" + task.completionStatus + "</p>";
         modal_content.appendChild(item);
+        var span = document.getElementById("close");
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
     };
 }
 
