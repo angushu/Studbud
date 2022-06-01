@@ -1,12 +1,36 @@
 #home-content {
 background-color: orchid;
+padding-left: 5em;
+
 }
 
 #main-text {
 background-color: blue;
+padding: 5em 5em;
 }
 
 .feature-cards {
     background-color: chartreuse;
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#prepare {
+    background-color: cyan;
+    padding: 5em 5em;
+}
+
+#practice {
+    background-color: magenta;
+    padding: 5em 5em;
+    
+}
+
+#revise {
+    background-color: yellow;
+    padding: 5em 5em;
     
 }

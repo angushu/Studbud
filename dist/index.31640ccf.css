@@ -23,19 +23,19 @@ img {
 }
 
 .app-container {
-  height: 100%;
+  width: 100%;
   background-color: #fbfbfb;
-  padding-left: 120px;
 }
 
 .home-container {
+  width: 100%;
   background-color: orange;
-  padding-left: 120px;
+  padding-top: 5em;
+  display: flex;
 }
 
 .prepare-container {
   background-color: #00f;
-  padding-left: 120px;
 }
 
 .page-container {
@@ -48,6 +48,11 @@ img {
 
 #page-1 {
   background-color: orange;
+}
+
+#music-player {
+  background-color: maroon;
+  padding: 5em;
 }
 
 h1 {
@@ -323,14 +328,35 @@ nav.vertical .nav-links .nav-item a {
 
 #home-content {
   background-color: orchid;
+  padding-left: 5em;
 }
 
 #main-text {
   background-color: #00f;
+  padding: 5em;
 }
 
 .feature-cards {
   background-color: #7fff00;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em;
+  display: flex;
+}
+
+#prepare {
+  background-color: #0ff;
+  padding: 5em;
+}
+
+#practice {
+  background-color: #f0f;
+  padding: 5em;
+}
+
+#revise {
+  background-color: #ff0;
+  padding: 5em;
 }
 
 /*# sourceMappingURL=index.31640ccf.css.map */
