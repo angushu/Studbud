@@ -6,8 +6,11 @@ padding-left: 5em;
 
 #main-text {
 background-color: blue;
-margin-top: 3em;
-padding: 5em 5em;
+padding: 3em 5em;
+margin-left: 5em;
+    p {
+        padding-top: 0.5em;
+    }
 }
 
 .feature-cards {
@@ -16,33 +19,41 @@ padding: 5em 5em;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    margin-left: 3em;
-    
+    padding:2em;
+    margin-left: 8em;
+
 }
 
 
-.card-container {
+.prepare-card{
     padding: 2em 3em;
     border-style: solid;
     border-width: 5px;
     border-radius: 2em;
+    border-color: #E18BE9;
+    background-color: white;
 }
-
-#prepare {
-    background-color: cyan;
-    padding: 4em 2em;
-}
-
-#practice {
-    background-color: magenta;
-    padding: 4em 2em;
+.practice-card {
+    padding: 2em 3em;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 2em;
+    border-color: #69C8E5;
+    background-color: white;
     
 }
 
-#revise {
-    background-color: yellow;
-    padding: 4em 2em;
-    
+.revise-card {
+    padding: 2em 3em;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 2em;
+    border-color: #FAB651;
+    background-color: white;
+}
+
+.feature-container{
+    padding: 3em 1em;
 }
 
 
@@ -52,8 +63,8 @@ padding: 5em 5em;
 }
 
 .home-image {
-    width: 10em;
-    height: 10em;
+    width: 8em;
+    height: 8em;
 
 
 }

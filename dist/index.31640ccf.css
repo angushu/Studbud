@@ -22,6 +22,20 @@ img {
   height: auto;
 }
 
+.banner {
+  text-align: center;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  display: flex;
+}
+
+.studbud-logo {
+  width: 3em;
+  height: 3em;
+}
+
 .app-container {
   background-color: #fbfbfb;
 }
@@ -50,10 +64,12 @@ img {
 
 h1 {
   font-family: Abril Fatface, cursive;
+  font-size: 3em;
 }
 
 h2 {
   font-family: Handlee, cursive;
+  font-size: 2em;
 }
 
 nav {
@@ -326,8 +342,12 @@ nav.vertical .nav-links .nav-item a {
 
 #main-text {
   background-color: #00f;
-  margin-top: 3em;
-  padding: 5em;
+  margin-left: 5em;
+  padding: 3em 5em;
+}
+
+#main-text p {
+  padding-top: .5em;
 }
 
 .feature-cards {
@@ -335,30 +355,34 @@ nav.vertical .nav-links .nav-item a {
   background-color: #7fff00;
   flex-direction: row;
   justify-content: space-around;
-  margin-left: 3em;
+  margin-left: 8em;
+  padding: 2em;
   display: flex;
 }
 
-.card-container {
-  border-style: solid;
-  border-width: 5px;
+.prepare-card {
+  background-color: #fff;
+  border: 5px solid #e18be9;
   border-radius: 2em;
   padding: 2em 3em;
 }
 
-#prepare {
-  background-color: #0ff;
-  padding: 4em 2em;
+.practice-card {
+  background-color: #fff;
+  border: 5px solid #69c8e5;
+  border-radius: 2em;
+  padding: 2em 3em;
 }
 
-#practice {
-  background-color: #f0f;
-  padding: 4em 2em;
+.revise-card {
+  background-color: #fff;
+  border: 5px solid #fab651;
+  border-radius: 2em;
+  padding: 2em 3em;
 }
 
-#revise {
-  background-color: #ff0;
-  padding: 4em 2em;
+.feature-container {
+  padding: 3em 1em;
 }
 
 #music-player {
@@ -367,8 +391,8 @@ nav.vertical .nav-links .nav-item a {
 }
 
 .home-image {
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 8em;
 }
 
 /*# sourceMappingURL=index.31640ccf.css.map */
