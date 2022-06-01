@@ -23,14 +23,12 @@ img {
 }
 
 .app-container {
-  width: 100%;
   background-color: #fbfbfb;
 }
 
 .home-container {
   width: 100%;
   background-color: orange;
-  padding-top: 5em;
   display: flex;
 }
 
@@ -48,11 +46,6 @@ img {
 
 #page-1 {
   background-color: orange;
-}
-
-#music-player {
-  background-color: maroon;
-  padding: 5em;
 }
 
 h1 {
@@ -92,7 +85,7 @@ nav .nav-links .nav-item a.active {
 }
 
 nav.vertical {
-  width: 120px;
+  width: 8em;
   height: 100vh;
   flex-direction: row;
   position: absolute;
@@ -333,30 +326,49 @@ nav.vertical .nav-links .nav-item a {
 
 #main-text {
   background-color: #00f;
+  margin-top: 3em;
   padding: 5em;
 }
 
 .feature-cards {
+  text-align: center;
   background-color: #7fff00;
   flex-direction: row;
   justify-content: space-around;
-  padding: 2em;
+  margin-left: 3em;
   display: flex;
+}
+
+.card-container {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 2em;
+  padding: 2em 3em;
 }
 
 #prepare {
   background-color: #0ff;
-  padding: 5em;
+  padding: 4em 2em;
 }
 
 #practice {
   background-color: #f0f;
-  padding: 5em;
+  padding: 4em 2em;
 }
 
 #revise {
   background-color: #ff0;
-  padding: 5em;
+  padding: 4em 2em;
+}
+
+#music-player {
+  background-color: maroon;
+  padding: 6em 3em;
+}
+
+.home-image {
+  width: 10em;
+  height: 10em;
 }
 
 /*# sourceMappingURL=index.31640ccf.css.map */

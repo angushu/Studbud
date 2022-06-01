@@ -6,31 +6,54 @@ padding-left: 5em;
 
 #main-text {
 background-color: blue;
+margin-top: 3em;
 padding: 5em 5em;
 }
 
 .feature-cards {
     background-color: chartreuse;
-    padding: 2em 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
+    margin-left: 3em;
     
+}
+
+
+.card-container {
+    padding: 2em 3em;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 2em;
 }
 
 #prepare {
     background-color: cyan;
-    padding: 5em 5em;
+    padding: 4em 2em;
 }
 
 #practice {
     background-color: magenta;
-    padding: 5em 5em;
+    padding: 4em 2em;
     
 }
 
 #revise {
     background-color: yellow;
-    padding: 5em 5em;
+    padding: 4em 2em;
     
+}
+
+
+#music-player {
+    background-color: maroon;
+    padding: 6em 3em;
+}
+
+.home-image {
+    width: 10em;
+    height: 10em;
+
+
 }
