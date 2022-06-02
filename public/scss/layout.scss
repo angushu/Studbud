@@ -24,6 +24,7 @@
 
 .prepare-container {
     background-color: blue;
+    display: flex;
 }
 
 
@@ -32,8 +33,4 @@
     &#home {
         text-align: center;
     }
-}
-
-#page-1 {
-    background-color: orange;
 }

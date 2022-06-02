@@ -8,9 +8,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.299b3d55.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.0ab44bf4.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.716a3aab.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap" rel="stylesheet">
   </head>
 
-  <body class="prepare-container">
+  <body class="app-container">
     <nav class="vertical top-nav">
       <ul class="nav-links">
         <li class="nav-item"><a href="/index.html">Home</a></li>
@@ -21,38 +24,31 @@
         <li class="nav-item"><a href="/revise.html">Revise</a></li>
       </ul>
     </nav>
+    <div class="banner">
+      <img class="studbud-logo" src="/favicon-32x32.0ab44bf4.png" alt="studbud-logo">
+      <h1>Studbud</h1>
+    </div>
 
-    <div id="page-1" class="page-container">
-      <h1>Page 1</h1>
-      <nav class="sub-nav">
-        <ul class="nav-links">
-          <li class="nav-item">
-            <a href="#page1-1" class="active"> Page 1-1</a>
-          </li>
-        </ul>
-      </nav>
-      <div id="page 1-1" class="sub-page-container">
-        <h2>Page 1-1</h2>
+    <div id="prepare" class="prepare-container">
+      <h1>Prepare</h1>
+      <div id="task-creator" class="sub-page-container">
+        <h2>Create a Task</h2>
         <div id="task-grid">
           <form id="taskform">
             <label for="task">Task:</label>
             <input type="text" name="task" id="taskInput">
             <br>
-
             <!-- Date Input -->
             <label for="dueDate"> Due Date:</label>
             <input type="date" name="dueDate" id="dueDateInput">
             <br>
-
             <!-- Time Input -->
             <label for="completionTime"> Completion Time:</label>
             <input type="time" name="completionTime" id="completionTimeInput">
             <br>
-
             <label for="estimatedTime">Estimated completion time (in mins):</label>
             <input type="number" name="estimatedTime" id="estimatedTimeInput">
             <br>
-
             <!-- Priority -->
             <label for="priority">Task Priority:</label>
             <select name="priority" id="priorityInput">
@@ -62,18 +58,17 @@
               <option value="High">High</option>
             </select>
             <br>
-
             <button type="submit">Submit</button>
           </form>
-          <div id="tasklist">
-            <p id="emptyList">You have not added any tasks yet</p>
-            <ul></ul>
-          </div>
+        </div>
+        <div id="tasklist">
+          <p id="emptyList">You have not added any tasks yet</p>
+          <ul></ul>
         </div>
       </div>
 
-      <h2>Page 1-2</h2>
-      <div id="covey-quadrant">
+      <div id="covey-quadrant" class="sub-page-container">
+        <h2>covey-quadrant</h2>
         <div id="quad-1" class="quadrant">
           <h3>Urgent + Important</h3>
         </div>
@@ -91,7 +86,6 @@
         <div id="modal-content">
           <span id="close">&times;</span>
         </div>
-
       </div>
     </div>
 
