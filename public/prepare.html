@@ -52,9 +52,9 @@
 
     <div id="prepare" class="prepare-container">
       <h1>Prepare</h1>
-      <div id="task-creator" class="sub-page-container">
-        <h2>Create a Task</h2>
-        <div id="task-grid">
+      <div id="prepare-content">
+        <div id="task-creator" class="sub-page-container">
+          <h2>Create a Task</h2>
           <form id="taskform">
             <label for="task">Task:</label>
             <input type="text" name="task" id="taskInput" />
@@ -68,7 +68,7 @@
             <input type="time" name="completionTime" id="completionTimeInput" />
             <br />
             <label for="estimatedTime"
-              >Estimated completion time (in mins):</label
+              >Completion time (in mins):</label
             >
             <input type="number" name="estimatedTime" id="estimatedTimeInput" />
             <br />
@@ -84,30 +84,24 @@
             <button type="submit">Submit</button>
           </form>
         </div>
-        <div id="tasklist">
-          <p id="emptyList">You have not added any tasks yet</p>
-          <ul></ul>
+        <div id="covey-quadrant" class="sub-page-container">
+          <div id="quad-1" class="quadrant">
+            <h3>Urgent + Important</h3>
+          </div>
+          <div id="quad-2" class="quadrant">
+            <h3>Not Urgent + Important</h3>
+          </div>
+          <div id="quad-3" class="quadrant">
+            <h3>Urgent + Not Important</h3>
+          </div>
+          <div id="quad-4" class="quadrant">
+            <h3>Not Urgent + Not Important</h3>
+          </div>
         </div>
-      </div>
-
-      <div id="covey-quadrant" class="sub-page-container">
-        <h2>covey-quadrant</h2>
-        <div id="quad-1" class="quadrant">
-          <h3>Urgent + Important</h3>
-        </div>
-        <div id="quad-2" class="quadrant">
-          <h3>Not Urgent + Important</h3>
-        </div>
-        <div id="quad-3" class="quadrant">
-          <h3>Urgent + Not Important</h3>
-        </div>
-        <div id="quad-4" class="quadrant">
-          <h3>Not Urgent + Not Important</h3>
-        </div>
-      </div>
-      <div id="task-modal" class="modal">
-        <div id="modal-content">
-          <span id="close">&times;</span>
+        <div id="task-modal" class="modal">
+          <div id="modal-content">
+            <span id="close">&times;</span>
+          </div>
         </div>
       </div>
     </div>

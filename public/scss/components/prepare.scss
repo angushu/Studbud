@@ -1,50 +1,81 @@
-
-#page-1 {
-  background-color: orange;
+.prepare-container {
+  margin-top: 1em;
+  h1{
+    margin-left:3em;
+  }
 }
+#prepare-content {
+  background-color: orchid;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5em;
+  margin-left: 5.5em;
+  }
 
-#task-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "taskform tasklist";
+  #task-creator {
+    background-color: orange;
+  }
+
+.sub-page-container {
+  padding: 1.5em 3em;
 }
 
 #taskform {
-  grid-area: taskform;
-  max-width: 300px;
-  margin: 0 auto;
-  label {
-    display: block;
-    width: 100%;
-  }
-}
+  background-color: yellow;
+  padding: 1em 3em;
+    label {
+      display: inline-block;
+      width:15em;
+    }
+   input {
+    padding: 0.5em 6em;
+    width:20em;
+    margin: 1em;
+    box-sizing: border-box;
+    display: inline-block;
+   }
+   select, button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 
-#tasklist {
-  grid-area: tasklist;
+   }
 }
 
 #covey-quadrant {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 1em;
+  background-color: powderblue;
+  align-content: stretch;
 
   .quadrant {
-    min-width: 10em;
-    min-height: 10em;
+    min-width: 15em;
+    min-height: 15em;
     border-radius: 2fr;
+    margin: 0.5em 0.5em;
   }
 
   #quad-1 {
     background-color: cadetblue;
+    flex-grow: 1;
   }
   #quad-2 {
     background-color: chartreuse;
+    flex-grow: 1;
   }
   #quad-3 {
     background-color: deeppink;
+    flex-grow: 1;
   }
   #quad-4 {
     background-color: gold;
+    flex-grow: 1;
   }
 }
 

@@ -48,7 +48,6 @@ img {
 
 .prepare-container {
   background-color: #00f;
-  display: flex;
 }
 
 .page-container {
@@ -115,56 +114,92 @@ nav.vertical .nav-links .nav-item a {
   display: block;
 }
 
-#page-1 {
+.prepare-container {
+  margin-top: 1em;
+}
+
+.prepare-container h1 {
+  margin-left: 3em;
+}
+
+#prepare-content {
+  background-color: orchid;
+  flex-direction: row;
+  margin-left: 5.5em;
+  padding-left: 5em;
+  display: flex;
+}
+
+#task-creator {
   background-color: orange;
 }
 
-#task-grid {
-  grid-template: "taskform tasklist" 1fr
-  / 1fr 1fr;
-  display: grid;
+.sub-page-container {
+  padding: 1.5em 3em;
 }
 
 #taskform {
-  max-width: 300px;
-  grid-area: taskform;
-  margin: 0 auto;
+  background-color: #ff0;
+  padding: 1em 3em;
 }
 
 #taskform label {
-  width: 100%;
-  display: block;
+  width: 15em;
+  display: inline-block;
 }
 
-#tasklist {
-  grid-area: tasklist;
+#taskform input {
+  width: 20em;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: .5em 6em;
+  display: inline-block;
+}
+
+#taskform select, #taskform button {
+  color: #fff;
+  text-align: center;
+  background-color: #4caf50;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 #covey-quadrant {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
+  background-color: #b0e0e6;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 1em;
+  display: flex;
 }
 
 #covey-quadrant .quadrant {
-  min-width: 10em;
-  min-height: 10em;
+  min-width: 15em;
+  min-height: 15em;
   border-radius: 2fr;
+  margin: .5em;
 }
 
 #covey-quadrant #quad-1 {
   background-color: #5f9ea0;
+  flex-grow: 1;
 }
 
 #covey-quadrant #quad-2 {
   background-color: #7fff00;
+  flex-grow: 1;
 }
 
 #covey-quadrant #quad-3 {
   background-color: #ff1493;
+  flex-grow: 1;
 }
 
 #covey-quadrant #quad-4 {
   background-color: gold;
+  flex-grow: 1;
 }
 
 #modalBtn {
@@ -379,7 +414,7 @@ nav.vertical .nav-links .nav-item a {
 
 .feature-container {
   text-align: center;
-  padding: 2em 1em;
+  padding: 3em 1em;
 }
 
 #music-player {
