@@ -526,6 +526,19 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"hKQ2O":[function(require,module,exports) {
+// To display different time features
+document.getElementById("feature-toggle").addEventListener("click", toggleFeature);
+function toggleFeature() {
+    var stopwatch_div = document.getElementById("stopwatch-container");
+    var pomodoro_div = document.getElementById("pomodoro-container");
+    if (stopwatch_div.style.display === "block") {
+        stopwatch_div.style.display = "none";
+        pomodoro_div.style.display = "block";
+    } else {
+        stopwatch_div.style.display = "block";
+        pomodoro_div.style.display = "none";
+    }
+}
 /* Stopwatch created with inspiration from:
 https://www.youtube.com/watch?v=49f1cjZWRJA&ab_channel=TylerPotts */ // Global Variables
 const elapsedTime = document.getElementById('watch-face');
@@ -563,14 +576,7 @@ function reset() {
     stop();
     seconds = 0;
     elapsedTime.innerText = "00:00:00";
-}
-var slider = document.getElementById('myRange');
-var output = document.getElementById('value');
-output.innerHTML = slider.value;
-slider.oninput = function() {
-    output.innerHTML = this.value;
 } //Pomodoro Timer
-;
 
 },{}]},["fBTxV","hKQ2O"], "hKQ2O", "parcelRequire60da")
 

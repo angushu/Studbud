@@ -9,9 +9,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.299b3d55.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.0ab44bf4.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.716a3aab.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&display=swap" rel="stylesheet">
   </head>
   
-  <body class="practice-container">
+  <body class="app-container">
     <nav class="vertical top-nav">
       <ul class="nav-links">
           <li class="nav-item"><a href="/index.html">Home</a></li>
@@ -20,17 +26,20 @@
           <li class="nav-item"><a href="/revise.html">Revise</a></li>
       </ul>
     </nav>
-  
-    <div id="page 2" class="page-container">
-      <h1>Page 2</h1>
-      <nav class="sub-nav">
-        <ul class="nav-links">
-          <li class="nav-item"><a href="#page2-1" class="active"> Page 2-1</a></li>
-          <li class="nav-item"><a href="#page2-2" class="active"> Page 2-2</a></li>
-        </ul>
-      </nav>
-      <div id="page 2-1" class="sub-page-container">
-        <h2>Page 2-1</h2>
+
+    <div class="banner">
+      <img class="studbud-logo" src="/favicon-32x32.0ab44bf4.png" alt="studbud-logo">
+      <h1>Studbud</h1>
+    </div>
+
+
+    <div id="practice" class="practice-container">
+
+      <h1>Practice</h1>
+      <button id="feature-toggle">Switch Mode</button>
+
+      <div id="stopwatch-container" class="sub-page-container">
+        <h2>Stopwatch</h2>
 <!---Setting up the structure of the watch with a clockface and controls-->
           <div class="watch">
 
@@ -45,56 +54,15 @@
             </div>
 
           </div>
-
       </div>
-      <div id="page 2-2" class="sub-page-container">
-        <h2>Page 2-2</h2>
-        <div class="control-panel">
-          <h2>Controls</h2>
-          
-          <h3 class="slider-description">Study Interval</h3>
-          <div class="slider-container">
-            <input type="range" min="0" max="100" value="1" id="myRange" class="slider">
-            <p>Value: <span id="value"></span></p>
-          </div>
 
-          <h3 class="slider-description">Short Break Time</h3>
-          <div class="slider-container">
-            <input type="range" min="0" max="100" value="1" id="myRange" class="slider">
-            <p>Value : <span id="value"></span></p>
-          </div>
-
-          <h3 class="slider-description">Long Break Time</h3>
-          <div class="slider-container">
-            <input type="range" min="0" max="100" value="1" id="myRange" class="slider">
-            <p>Value : <span id="value"></span></p>
-          </div>    
-          
-          <h3 class="slider-description">Number of rounds</h3>
-          <input type="text">
-
-          </div>
-
-        </div>
-        <div class="pomodoro">
-          <div>
-            <h2>This is a a pomodoro timer</h2>
-            <div class="countwdown">
-              <div class="container-minute">
-                <h3 class="hour">Time</h3>
-                <h3>Minute</h3>
-              </div>
-              <div class="container-second">
-                <h3 class="hour">Time</h3>
-                <h3>Second</h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
+      <div id="pomodoro-container" class="sub-page-container">
+        <h2>Pomodoro Timer</h2>
       </div>
-    
+      
+    </div>
+  </body>
 
 <script src="/practice.788df4c9.js" defer=""></script>
-</body>
+
 </html>
